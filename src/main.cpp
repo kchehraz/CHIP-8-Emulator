@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 		cout << "Invalid arguments" << endl;
 		return 1;
 	}
-
+	
 	Chip8 chip8 = Chip8();
 	if (!chip8.load(argv[1])) {
 		cout << "Failed to load file " << argv[1] << ".\n";
