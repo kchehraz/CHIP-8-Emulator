@@ -48,7 +48,6 @@ void Chip8::initialize() {
 	delay_timer = 0;            // Delay timer
 	sound_timer = 0;            // Sound timer
 
-
 	for (int i = 0; i < 80; i++) { // Load font set into memory (0x00-0x50)
 		memory[i] = fontset[i];
 	}
