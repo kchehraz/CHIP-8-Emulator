@@ -1,6 +1,8 @@
 # CHIP-8-Emulator
 A CHIP-8 Emulator implemented in C++ with the SDL library. This was pretty much entirely written using the following resources:
+
 http://en.wikipedia.org/wiki/CHIP-8
+
 http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/
 
 To compile the project, you must have SDL2 libraries included. The files SDL Development Libraries can be found at:
