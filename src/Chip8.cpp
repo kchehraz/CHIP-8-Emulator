@@ -29,8 +29,6 @@ unsigned char fontset[80] = {
 
 Chip8::Chip8() {}
 
-Chip8::~Chip8() {}
-
 void Chip8::initialize() {
 	srand(time(0));             // Seed the RNG
 
