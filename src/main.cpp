@@ -55,7 +55,6 @@ int main(int argc, char **argv) {
 	while (true) {
 		chip8.emulateCycle();
 
-		// Check if we need to redraw the screen
 		SDL_Event event;
 		while (SDL_PollEvent(&event)) {
 			if (event.type == SDL_QUIT) return 0; // won't be able to quit the program without this
@@ -76,7 +75,8 @@ int main(int argc, char **argv) {
 				}
 			}
 		}
-
+		
+		// Check if we need to redraw the screen
 		if (chip8.drawFlag) {
 			// Fill pixel buffer
 			for (int i = 0; i < 64 * 32; i++) {
